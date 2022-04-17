@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* Root */
+:root{
+    --bg-color: #1a1a1a;
+    --text-color: #fff;
+    --font-head: 'Anton', sans-serif;
+    --font-normal: 'Kanit', sans-serif;
+
+    /* Padding */
+    --padding-5: 5px;
+    --padding-10: 10px;
+
+    /* Margin */
+    --margin-5: 5px;
+    --margin-10: 10px;
+
+    /* Menu */
+    --menu-bg-color: rgba(17, 19, 26, .5);
+
+    /* Menu Box */
+    --flex: space-around;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Ön Ayarlar */
+body{
+    background-color: #1a1a1a;
+    color: var(--text-color);
+    font-family: var(--font-normal);
+    margin: 0;
+
+    /* Arka Plan */
+    /* background-image: url('https://media.discordapp.net/attachments/965005252862570558/965018312306196480/unknown.png?width=960&height=542');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+*{
+    transition: 250ms all;
+}
+
+::selection{
+    background: red;
+    color: white;
+}
+
+.background{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.box{
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 400px;
+}
+.box .profil-resmi img{
+    border-radius: 500%;
+    margin-top: -50px;
+    width: 150px;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 1);
+}
+.box .tdesc{
+    color: white;
+    text-align: center;
+}
+.box .social-box{
+    display: flex;
+    justify-content: center;
+}
+.box .social-box a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 250ms all
+}
+.box .social-box a:hover{
+    color: rgba(255, 255, 255, .6)
+}
+.box button{
+    padding: 7px;
+    border-radius: 5px;
+    transition: 250ms all;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: rgba(26, 26, 26, 1);
+    margin-top: 15px;
+    /* Efekt */
+    background-image: linear-gradient(to left, rgba(31, 31, 31, 1) 100%, rgba(31, 31, 31, 1) 0%);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0%;
+}
+.box button:hover{
+    background-size: 100%;
+    transform: scale(1.05);
+}
+
+/* Beceriler */
+.beceriler{
+    padding: 10px;
+    position: absolute;
+    left: 500%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 400px;
+    opacity: 0;
+    visibility: hidden;
+}
+.beceriler h1{
+    text-align: center;
+}
+.beceriler button{
+    padding: 7px;
+    border-radius: 5px;
+    transition: 250ms all;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: rgba(26, 26, 26, 1);
+    margin-top: 15px;
+    /* Efekt */
+    background-image: linear-gradient(to left, rgba(31, 31, 31, 1) 100%, rgba(31, 31, 31, 1) 0%);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0%;
+}
+.beceriler button:hover{
+    background-size: 100%;
+    transform: scale(1.05);
+}
+
+/* Github */
+.github{
+    padding: 10px;
+    position: absolute;
+    left: 500%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 400px;
+    opacity: 0;
+    visibility: hidden;
+}
+.github button{
+    padding: 7px;
+    border-radius: 5px;
+    transition: 250ms all;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: rgba(26, 26, 26, 1);
+    margin-top: 15px;
+    /* Efekt */
+    background-image: linear-gradient(to left, rgba(31, 31, 31, 1) 100%, rgba(31, 31, 31, 1) 0%);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0%;
+}
+.github button:hover{
+    background-size: 100%;
+    transform: scale(1.05);
+}
+.github h1{
+    text-align: center;
+}
+.github-box{
+    padding: 10px;
+    box-shadow: 0px 0px 0px 2px rgba(25, 24, 23, .5);
+    border-radius: 10px;
+}
+.github-box .profil img{
+    border-radius: 500%;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.github-box .ttt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.github-box .ttt div{
+    text-align: center;
+}
+.github-box hr{
+    background: rgba(255, 255, 255, .5);
+    border: none;
+    height: 10px;
+    width: 1px;
+}
+.github-box a{
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 250ms all;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: none;
+    display: block;
+    outline: none;
+    background-color: rgba(26, 26, 26, 1);
+    margin-top: 15px;
+}
+.github-box a:hover{
+    transform: scale(1.05);
+    background-color: rgba(26, 26, 26, .5)
+}
+
+/* Progress Bar */
+.wrapper{
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    margin:0 auto;
+}
+.skill{
+    margin-bottom: 35px;
+    position: relative;
+    overflow-x:hidden;    
+}
+.skill > p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.skill:before{
+    width: 100%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+}
+.skill-bar {
+    width: 100%;
+    height: 5px;
+    background:#f4392f;
+    display: block;
+    position: relative;
+}
+.skill1{
+    width: 95%;     
+}
+.skill-bar span{
+    position: absolute;
+    border-top: 5px solid #f4392f;
+    top: -30px;
+    left: 355px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+.skill-bar {
+    position: relative;       
+}
+.skill1{
+    width: 70%;
+}
+.skill1 .skill-count1 {
+    right: 0;
+}
+.skill2{
+    width: 30%;
+}
+.skill2 .skill-count2 {
+    right: 0;
+}
+.skill3{
+    width: 15%;
+}
+.skill3 .skill-count3 {
+    right: 0;
+}
+.skill4{
+    width: 10%;
+}
+.skill4 .skill-count3 {
+    right: 0;
+}
+.skill5{
+    width: 85%;
+}
+.skill5 .skill-count3 {
+    right: 0;
+}
+.skill6{
+    width: 40%;
+}
+.skill4 .skill-count3 {
+    right: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px){
+    .box{
+        width: 350px;
+    }
+    .beceriler{
+        width: 370px;
+    }
+    .wrapper{
+        width: 300px;
+        font-family: 'Roboto', sans-serif;
+        margin:0 auto;
+    }
+    .skill-bar span{
+        position: absolute;
+        border-top: 5px solid #f4392f;
+        top: -30px;
+        left: 252px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+    .github{
+        width: 350px;
+    }
+}
