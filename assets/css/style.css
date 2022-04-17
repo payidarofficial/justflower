@@ -235,6 +235,18 @@ body{
     background-color: rgba(26, 26, 26, .5)
 }
 
+/* Particle */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
 /* Progress Bar */
 .wrapper{
     width: 400px;
